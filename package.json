@@ -1,0 +1,12 @@
+{
+    "dependencies": {
+      "@fastify/static": "^7.0.4",
+      "fastify": "^4.28.0",
+      "nodemon": "^3.1.4"
+    },
+    "scripts": {
+      "build": "npm run git-info && tsc -p tsconfig.json",
+      "start": "node dist/src/index.js",
+      "dev": "nodemon --watch src src/index.js"
+    }
+  }
